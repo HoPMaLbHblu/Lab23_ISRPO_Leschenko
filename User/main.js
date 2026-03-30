@@ -34,3 +34,17 @@ form.addEventListener("submit", function (event) {
     profileCity.textContent = city;
     profileHobby.textContent = hobby;
 });
+clearBtn.addEventListener("click", function () {
+
+    nameInput.value = "";
+    ageInput.value = "";
+    cityInput.value = "";
+    hobbyInput.value = "";
+
+    profileName.textContent = "—";
+    profileAge.textContent = "—";
+    profileCity.textContent = "—";
+    profileHobby.textContent = "—";
+
+    errorText.textContent = "";
+});
